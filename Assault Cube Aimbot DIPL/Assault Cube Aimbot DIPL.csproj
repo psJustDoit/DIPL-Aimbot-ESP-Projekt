@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Assault_Cube_Aimbot_DIPL</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="swed32" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ezOverLay">
+      <HintPath>..\..\..\..\Desktop\ezOverLay.dll-master\ezOverLay\bin\Debug\ezOverLay.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

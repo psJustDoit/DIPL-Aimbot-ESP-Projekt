@@ -10,6 +10,6 @@
 - Kretanje u video igri se radi sa WASD tipkama, pucanje sa lijevim klikom miša
 - Za testiranje softvera protiv AI igrača: Singleplayer -> Team Deathmatch (ili bilo koji drugi game mode, no za svrhu jednostavnosti) -> Odabrati težinu AI igrača -> Odabrati broj igrača po timu (u slučaju umiranja u rundi, lijevi klik miša radi respawn (ponovno vraćanje u rudnu) igrača
 
-# Korištenje softvera za varanje 
+# Korištenje softvera za varanje
 - Potrebno je preuzeti 
 - Nakon pokretanja Assault Cube videoigre, softver je dovoljno pokrenuti iz Visual Studio-a# Prozor aplikacije je nevidljiv i napravljen je da se nalazi na istoj poziciji kao i Assault Cube prozor u slučaju pomicanja po ekranu (također da bude iste veličine)

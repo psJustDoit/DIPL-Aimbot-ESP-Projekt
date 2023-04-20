@@ -12,4 +12,5 @@
 
 # Korištenje softvera za varanje
 - Potrebno je preuzeti 
-- Nakon pokretanja Assault Cube videoigre, softver je dovoljno pokrenuti iz Visual Studio-a# Prozor aplikacije je nevidljiv i napravljen je da se nalazi na istoj poziciji kao i Assault Cube prozor u slučaju pomicanja po ekranu (također da bude iste veličine)
+- Nakon pokretanja Assault Cube videoigre, softver je dovoljno pokrenuti iz Visual Studio-a
+- Prozor aplikacije je nevidljiv i napravljen je da se nalazi na istoj poziciji kao i Assault Cube prozor u slučaju pomicanja po ekranu (također da bude iste veličine)

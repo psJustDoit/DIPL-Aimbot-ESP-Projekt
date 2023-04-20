@@ -19,8 +19,18 @@ namespace Assault_Cube_Aimbot_DIPL
 
         public Functions()
         {
-            memory = new Swed("ac_client");
-            moduleBase = memory.GetModuleBase(".exe");
+            try
+            {
+                memory = new Swed("ac_client");
+                moduleBase = memory.GetModuleBase(".exe");
+            }
+            catch(Exception ex)
+            {
+                //If index out of bounds it means process was not found
+                MessageBox.Show(ex.Message + " (Process was not found among Task Manager processes)", "No process found");
+                System.Environment.Exit(1);
+            }
+            
         }
 
         //Get local player entity
@@ -56,8 +66,8 @@ namespace Assault_Cube_Aimbot_DIPL
             var entities = new List<Entity>();
             var entityList = memory.ReadPointer(moduleBase, Offsets.entityList);
 
-            //20 because its the maximum number of players in an online server
-            for(int i = 0; i < 20; ++i)
+            //32 because its the maximum number of AI in a game
+            for(int i = 0; i < 32 ; ++i)
             {
                 var currEntityBase = memory.ReadPointer(entityList, i * 0x4); //Each entity 4 bytes apart
                 var entity = ReadEntity(currEntityBase);
@@ -117,6 +127,7 @@ namespace Assault_Cube_Aimbot_DIPL
         {
             var twoD = new Point();
 
+            //Multiplying vector with matrix
             float screenW = (ntx.m14 * position.X) + (ntx.m24 * position.Y) 
                 + (ntx.m34 * position.Z) + ntx.m44;
 
@@ -124,15 +135,18 @@ namespace Assault_Cube_Aimbot_DIPL
             //If its higher than this number then entity is in front of us and lines will be drawn
             if (screenW > 0.001f)
             {
+                //Multiplying vector with matrix
                 float screenX = (ntx.m11 * position.X) + (ntx.m21 * position.Y)
                     + (ntx.m31 * position.Z) + ntx.m41;
 
                 float screenY = (ntx.m12 * position.X) + (ntx.m22 * position.Y) + 
                     + (ntx.m32 * position.Z) + ntx.m42;
 
+                //Camera position
                 float camX = width / 2f;
                 float camY = height / 2f;
 
+                //Convert to homogeneous position
                 float X = camX + (camX * screenX / screenW);
                 float Y = camY - (camY * screenY / screenW);
 

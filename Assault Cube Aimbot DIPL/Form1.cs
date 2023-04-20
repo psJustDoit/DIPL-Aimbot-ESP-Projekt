@@ -36,7 +36,7 @@ namespace Assault_Cube_Aimbot_DIPL
                 ezOverlay.SetInvi(this);
                 ezOverlay.DoStuff("AssaultCube", this);
 
-                //If main app is closed, close this app too
+                //If main app is closed, dont run this
                 Thread t = new Thread(MainLoop) { IsBackground = true};
                 t.Start();
             }
@@ -48,7 +48,7 @@ namespace Assault_Cube_Aimbot_DIPL
             {
                 //Find my local player info
                 localPlayer = funcs.ReadLocalPlayer();
-                //Local player parameter needed to calculate magnitude to other entities
+                //Local player parameter needed to calculate magnitude of other entities
                 entities = funcs.ReadMultipleEntities(localPlayer);
 
                 //Closest entity is first

@@ -13,5 +13,9 @@
 - Za testiranje softvera protiv AI igrača: Singleplayer -> Team Deathmatch (ili bilo koji drugi game mode, no za svrhu jednostavnosti) -> Odabrati težinu AI igrača -> Odabrati broj igrača po timu te će runda početi (u slučaju umiranja u rundi, lijevi klik miša radi respawn (ponovno vraćanje u rudnu) igrača)
 
 # Korištenje softvera za varanje
+- Prvo je potrebno extract-ati ezOverlay projekt iz ezOverlay.dll.zip
+- Tada pokrenuti ezOverlay.sln i build-ati projekt
+- Nakon toga projekt se može zatvoriti i može se otvoriti originalni projekt gdje je potrebno ubaciti ezOverlay.dll
+- U Aimbot projektu desni klik na References -> Add Reference -> Browse te otići u extract-ani projekt ezOverlay->bin->Debug i odabrati ezOverlay.dll
 - Nakon pokretanja Assault Cube videoigre, softver je dovoljno pokrenuti iz Visual Studio-a
 - Prozor aplikacije je nevidljiv i napravljen je da se nalazi na istoj poziciji kao i Assault Cube prozor u slučaju pomicanja po ekranu (također da bude iste veličine)

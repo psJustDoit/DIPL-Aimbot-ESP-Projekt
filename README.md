@@ -8,7 +8,7 @@
 - Nakon završene instalacije igra se pokreće dvoklikom na "assaultcube.bat" datoteku
 - Otvaranje i zatvaranje menu-a se radi ESC tipkom, a navigiranje po menu-u sa strelicama gore i dolje, ENTER za odabiranje opcija te strelice lijevo i desno za bilo kakve opcije sa slider-om
 - Kretanje u video igri se radi sa WASD tipkama, pucanje sa lijevim klikom miša
-- Za testiranje softvera protiv AI igrača: Singleplayer -> Team Deathmatch (ili bilo koji drugi game mode, no za svrhu jednostavnosti) -> Odabrati težinu AI igrača -> Odabrati broj igrača po timu (u slučaju umiranja u rundi, lijevi klik miša radi respawn (ponovno vraćanje u rudnu) igrača
+- Za testiranje softvera protiv AI igrača: Singleplayer -> Team Deathmatch (ili bilo koji drugi game mode, no za svrhu jednostavnosti) -> Odabrati težinu AI igrača -> Odabrati broj igrača po timu te će runda početi (u slučaju umiranja u rundi, lijevi klik miša radi respawn (ponovno vraćanje u rudnu) igrača)
 
 # Korištenje softvera za varanje
 - Potrebno je preuzeti 

@@ -19,3 +19,7 @@
 - U Aimbot projektu desni klik na References -> Add Reference -> Browse te otići u extract-ani projekt ezOverlay->bin->Debug i odabrati ezOverlay.dll
 - Nakon pokretanja Assault Cube videoigre, softver je dovoljno pokrenuti iz Visual Studio-a
 - Prozor aplikacije je nevidljiv i napravljen je da se nalazi na istoj poziciji kao i Assault Cube prozor u slučaju pomicanja po ekranu (također da bude iste veličine)
+
+
+![slika](https://github.com/psJustDoit/DIPL-Aimbot-ESP-Projekt/assets/86831771/b910d478-b249-40a2-bbf0-539705103dee)
+![slika](https://github.com/psJustDoit/DIPL-Aimbot-ESP-Projekt/assets/86831771/85d867da-7ac6-4809-8383-5c71c70e1a29)
